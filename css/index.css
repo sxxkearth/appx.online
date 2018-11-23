@@ -1043,7 +1043,7 @@ body #header {
 }
 #hero ul.pure li,
 #hero ol.pure li {
-  padding: 12px;
+  padding: 8px;
   margin: 0 4px;
   display: flex;
   width: 80px;
@@ -1077,7 +1077,7 @@ body #header {
 #hero ul.pure li a .fa,
 #hero ol.pure li a .fa {
   font-size: 2em;
-  margin-top: 4px;
+  margin-top: 6px;
 }
 #hero ul.pure li img,
 #hero ol.pure li img {
