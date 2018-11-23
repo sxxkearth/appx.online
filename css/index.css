@@ -990,8 +990,8 @@ body #header {
   display: inline-block;
 }
 #hero .hero-logo {
-  width: 15em;
-  height: 15em;
+  width: 13em;
+  height: 13em;
   float: right;
   margin-right: 60px;
   border-radius: 50%;
@@ -1020,8 +1020,9 @@ body #header {
 }
 #hero ul,
 #hero ol {
-  padding: 12px;
+  padding: 4px;
   position: inherit;
+  margin: 8px;
 }
 #hero ul.center,
 #hero ol.center {
@@ -1042,9 +1043,10 @@ body #header {
 }
 #hero ul.pure li,
 #hero ol.pure li {
-  padding: 0 6px;
+  padding: 12px;
+  margin: 0 4px;
   display: flex;
-  width: 110px;
+  width: 80px;
   flex-direction: column;
   align-items: stretch;
   vertical-align: middle;
@@ -1052,27 +1054,45 @@ body #header {
   font-size: 0.9em;
   line-height: 2em;
   overflow: hidden;
+  border-radius: 4px;
+  background: rgba(61,197,80,0.7);
+  transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
 }
 #hero ul.pure li a,
 #hero ol.pure li a {
-  padding: 16px;
-  padding-bottom: 12px;
+  margin: 0;
+  font-size: 0.9em;
+  line-height: 2em;
   font-weight: bold;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border-radius: 16px;
+  border-radius: 4px;
   color: #fff;
-  background: rgba(61,197,80,0.8);
 }
 #hero ul.pure li a .fa,
 #hero ol.pure li a .fa {
-  font-size: 2.4em;
+  font-size: 2em;
+  margin-top: 4px;
 }
 #hero ul.pure li img,
 #hero ol.pure li img {
   margin-bottom: 8px;
+}
+#hero ul.pure li:hover,
+#hero ol.pure li:hover,
+#hero ul.pure li.active,
+#hero ol.pure li.active,
+#hero ul.pure li:active,
+#hero ol.pure li:active {
+  background: #3dc550;
+  transform: scale(1.02);
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12), 0 8px 16px rgba(0,0,0,0.12), 0 16px 32px rgba(0,0,0,0.12);
 }
 #hero ul.pure.rounded img,
 #hero ol.pure.rounded img {
