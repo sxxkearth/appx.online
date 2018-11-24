@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>APPX ONLINE</title>
+  <title>appx online</title>
   <icon>https://www.gravatar.com/avatar/adb7d1cd192658a55c0ad22a3309cecf</icon>
   
   <link href="/atom.xml" rel="self"/>
