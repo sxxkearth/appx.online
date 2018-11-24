@@ -4,7 +4,7 @@
 <html lang="zh-CN">
   <head>
     
-        <title>APPX ONLINE</title>
+        <title>书签 | APPX ONLINE</title>
     
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -39,7 +39,7 @@
     <script src="/js/vue.js"></script>
     <script>
       Vue.config.productionTip = false
-      window.PAGE_TYPE = ""
+      window.PAGE_TYPE = "书签"
     </script>
 
     <!-- ga -->
@@ -58,6 +58,8 @@
   <body class="docs">
     <div id="mobile-bar">
       <a class="menu-button fa fa-bars"></a>
+      
+        <h2 class="nav-title">书签</h2>
       
       <a class="logo" href="/"></a>
     </div>
@@ -185,25 +187,190 @@
 
       </ul>
       
+        <div class="list">
+          <h2>
+            
+            书签
+          </h2>
+          <ul class="menu-root">
+  
+    
+    
+    <li>
+      <a href="/bookmarks/index.html" class="sidebar-link">网络收藏夹</a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="/bookmarks/mac-terminal/index.html" class="sidebar-link">macOS常用终端命令</a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="/bookmarks/ios-ui-basic-specification/index.html" class="sidebar-link">iOS UI切图基本规范</a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="/bookmarks/native-bundleid/index.html" class="sidebar-link current">苹果自带应用的BundleID</a>
+    </li>
+  
+</ul>
+
+        </div>
+      
     </div>
   
 </div>
 
 
-<div class="content  ">
+<div class="content 书签 with-sidebar ">
+  
+    
   
   
+    <h1>苹果自带应用的BundleID</h1>
   
-    <h1 id="appx-online"><a href="#appx-online" class="headerlink" title="appx.online"></a>appx.online</h1>
+  
+    <table>
+<thead>
+<tr>
+<th style="text-align:left">App</th>
+<th style="text-align:left">BundleID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Settings(设置)</td>
+<td style="text-align:left"><code>com.apple.PReferences</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Camera(相机)</td>
+<td style="text-align:left"><code>com.apple.Camera</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Photos(照片)</td>
+<td style="text-align:left"><code>com.apple.mobileslideshow</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Email(邮件)</td>
+<td style="text-align:left"><code>com.apple.mobilemail</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Reminders(提醒事项)</td>
+<td style="text-align:left"><code>com.apple.reminders</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Notes(备忘录)</td>
+<td style="text-align:left"><code>com.apple.mobilenotes</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Calculator(计算器)</td>
+<td style="text-align:left"><code>com.apple.calculator</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Phone(电话)</td>
+<td style="text-align:left"><code>com.apple.mobilephone</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Messages(短信)</td>
+<td style="text-align:left"><code>com.apple.MobileSMS</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Voice Memos(语音备忘录)</td>
+<td style="text-align:left"><code>com.apple.VoiceMemos</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Maps(地图)</td>
+<td style="text-align:left"><code>com.apple.Maps</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Contacts(联系人)</td>
+<td style="text-align:left"><code>com.apple.MobileAddressBook</code></td>
+</tr>
+<tr>
+<td style="text-align:left">FaceTime</td>
+<td style="text-align:left"><code>com.apple.facetime</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Weather(天气)</td>
+<td style="text-align:left"><code>com.apple.weather</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Health(健康)</td>
+<td style="text-align:left"><code>com.apple.Health</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Wallet(Wallet)</td>
+<td style="text-align:left"><code>com.apple.Passbook</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Music(音乐)</td>
+<td style="text-align:left"><code>com.apple.Music</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Videos(视频)</td>
+<td style="text-align:left"><code>com.apple.videos</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Podcasts(播客)</td>
+<td style="text-align:left"><code>com.apple.podcasts</code></td>
+</tr>
+<tr>
+<td style="text-align:left">iTunes Store</td>
+<td style="text-align:left"><code>com.apple.MobileStore</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Game Center</td>
+<td style="text-align:left"><code>com.apple.gamecenter</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Watch</td>
+<td style="text-align:left"><code>com.apple.Bridge</code></td>
+</tr>
+<tr>
+<td style="text-align:left">iBooks</td>
+<td style="text-align:left"><code>com.apple.iBooks</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Clock(时钟)</td>
+<td style="text-align:left"><code>com.apple.mobiletimer</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Stocks(股市)</td>
+<td style="text-align:left"><code>com.apple.stocks</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Find Friends(查找朋友)</td>
+<td style="text-align:left"><code>com.apple.mobileme.fmf1</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Find iPhone(查找iPhone)</td>
+<td style="text-align:left"><code>com.apple.mobileme.fmip1</code></td>
+</tr>
+<tr>
+<td style="text-align:left">News(News)</td>
+<td style="text-align:left"><code>com.apple.news</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Tips(提示)</td>
+<td style="text-align:left"><code>com.apple.tips</code></td>
+</tr>
+</tbody>
+</table>
+
   
   
   <br><br><br>
 
   <div class="footer">
-      <p><time class="time" itemprop="dateUpdated" datetime="2018-11-23T09:10:47+08:00" content="2018-11-23 星期五">
-        <i class="fa fa-edit fa-fw" aria-hidden="true"></i>本文最后更新于：2018-11-23 星期五，
+      <p><time class="time" itemprop="dateUpdated" datetime="2018-10-09T09:30:48+08:00" content="2018-10-09 星期二">
+        <i class="fa fa-edit fa-fw" aria-hidden="true"></i>本文最后更新于：2018-10-09 星期二，
       </time>
-      想参与编辑？<a href="https://github.com/xaoxuu/appx.online/blob/master/src/README.md" target="_blank" rel="external nofollow noopener noreferrer">在 GitHub 上编辑此页！</a></p>
+      想参与编辑？<a href="https://github.com/xaoxuu/appx.online/blob/master/src/bookmarks/native-bundleid/index.md" target="_blank" rel="external nofollow noopener noreferrer">在 GitHub 上编辑此页！</a></p>
 
       
         <p><i class="fa fa-exclamation-triangle fa-fw" aria-hidden="true"></i>本站所有下载链接均标注文件来源，如果部分第三方下载源侵犯了软件开发方或者合法代理商的合法权利，

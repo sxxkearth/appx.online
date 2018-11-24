@@ -4,7 +4,7 @@
 <html lang="zh-CN">
   <head>
     
-        <title>APPX ONLINE</title>
+        <title>书签 | APPX ONLINE</title>
     
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -39,7 +39,7 @@
     <script src="/js/vue.js"></script>
     <script>
       Vue.config.productionTip = false
-      window.PAGE_TYPE = ""
+      window.PAGE_TYPE = "书签"
     </script>
 
     <!-- ga -->
@@ -58,6 +58,8 @@
   <body class="docs">
     <div id="mobile-bar">
       <a class="menu-button fa fa-bars"></a>
+      
+        <h2 class="nav-title">书签</h2>
       
       <a class="logo" href="/"></a>
     </div>
@@ -185,25 +187,80 @@
 
       </ul>
       
+        <div class="list">
+          <h2>
+            
+            书签
+          </h2>
+          <ul class="menu-root">
+  
+    
+    
+    <li>
+      <a href="/bookmarks/index.html" class="sidebar-link">网络收藏夹</a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="/bookmarks/mac-terminal/index.html" class="sidebar-link current">macOS常用终端命令</a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="/bookmarks/ios-ui-basic-specification/index.html" class="sidebar-link">iOS UI切图基本规范</a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="/bookmarks/native-bundleid/index.html" class="sidebar-link">苹果自带应用的BundleID</a>
+    </li>
+  
+</ul>
+
+        </div>
+      
     </div>
   
 </div>
 
 
-<div class="content  ">
+<div class="content 书签 with-sidebar ">
+  
+    
   
   
+    <h1>macOS常用终端命令</h1>
   
-    <h1 id="appx-online"><a href="#appx-online" class="headerlink" title="appx.online"></a>appx.online</h1>
+  
+    <h2 id="显示隐藏文件"><a href="#显示隐藏文件" class="headerlink" title="显示隐藏文件"></a><i class="fa fa-file fa-fw"></i>显示隐藏文件</h2><h3 id="显示"><a href="#显示" class="headerlink" title="显示"></a><i class="fa fa-eye fa-fw"></i>显示</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">defaults write com.apple.finder _FXShowPosixPathInTitle -bool TRUE;</span><br><span class="line">killall Finder</span><br></pre></td></tr></table></figure>
+<h3 id="隐藏"><a href="#隐藏" class="headerlink" title="隐藏"></a><i class="fa fa-eye-slash fa-fw"></i>隐藏</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">defaults delete com.apple.finder _FXShowPosixPathInTitle;</span><br><span class="line">killall Finder</span><br></pre></td></tr></table></figure>
+<h2 id="安装包已损坏的解决办法"><a href="#安装包已损坏的解决办法" class="headerlink" title="安装包已损坏的解决办法"></a>安装包已损坏的解决办法</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo spctl --master-disable</span><br></pre></td></tr></table></figure>
+<h2 id="外置磁盘路径"><a href="#外置磁盘路径" class="headerlink" title="外置磁盘路径"></a><i class="fa fa-folder-open fa-fw"></i>外置磁盘路径</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/volume/磁盘路径/~~~</span><br></pre></td></tr></table></figure>
+<p>例如一个名称为”Files”的磁盘里的文件夹”Projects”路径是:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/Volumes/Files/Projects/</span><br></pre></td></tr></table></figure></p>
+<h2 id="使用终端将-json-文件转为-plist-文件"><a href="#使用终端将-json-文件转为-plist-文件" class="headerlink" title="使用终端将 json 文件转为 plist 文件"></a><i class="fa fa-exchange fa-fw"></i>使用终端将 json 文件转为 plist 文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plutil -convert xml1 data.json -o data.plist</span><br></pre></td></tr></table></figure>
+<p>其中<code>data.json</code>、<code>data.plist</code>分别对应转换前后的文件路径。</p>
+<h2 id="sudo依然没有权限的解决办法"><a href="#sudo依然没有权限的解决办法" class="headerlink" title="sudo依然没有权限的解决办法"></a>sudo依然没有权限的解决办法</h2><h3 id="查询SIP状态"><a href="#查询SIP状态" class="headerlink" title="查询SIP状态"></a>查询SIP状态</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">csrutil status</span><br></pre></td></tr></table></figure>
+<p>如果输出：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System Integrity Protection status: enabled.</span><br></pre></td></tr></table></figure></p>
+<p>说明SIP保护开启，需要暂时关闭SIP。</p>
+<h3 id="关闭SIP保护"><a href="#关闭SIP保护" class="headerlink" title="关闭SIP保护"></a>关闭SIP保护</h3><p>重启Mac，按住【⌘】+【R】直到出现开机logo，此时会进入Recovery模式，选择实用工具菜单中的终端（Terminal）<br>输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">csrutil <span class="built_in">disable</span></span><br></pre></td></tr></table></figure>
+<p>然后重新启动电脑即可关闭SIP保护。</p>
+<h3 id="开启SIP保护"><a href="#开启SIP保护" class="headerlink" title="开启SIP保护"></a>开启SIP保护</h3><p>重启Mac，按住【⌘】+【R】直到出现开机logo，此时会进入Recovery模式，选择实用工具菜单中的终端（Terminal）<br>输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">csrutil <span class="built_in">enable</span></span><br></pre></td></tr></table></figure>
+<p>然后重新启动电脑即可开启SIP保护。</p>
+
   
   
   <br><br><br>
 
   <div class="footer">
-      <p><time class="time" itemprop="dateUpdated" datetime="2018-11-23T09:10:47+08:00" content="2018-11-23 星期五">
-        <i class="fa fa-edit fa-fw" aria-hidden="true"></i>本文最后更新于：2018-11-23 星期五，
+      <p><time class="time" itemprop="dateUpdated" datetime="2018-10-09T09:30:45+08:00" content="2018-10-09 星期二">
+        <i class="fa fa-edit fa-fw" aria-hidden="true"></i>本文最后更新于：2018-10-09 星期二，
       </time>
-      想参与编辑？<a href="https://github.com/xaoxuu/appx.online/blob/master/src/README.md" target="_blank" rel="external nofollow noopener noreferrer">在 GitHub 上编辑此页！</a></p>
+      想参与编辑？<a href="https://github.com/xaoxuu/appx.online/blob/master/src/bookmarks/mac-terminal/index.md" target="_blank" rel="external nofollow noopener noreferrer">在 GitHub 上编辑此页！</a></p>
 
       
         <p><i class="fa fa-exclamation-triangle fa-fw" aria-hidden="true"></i>本站所有下载链接均标注文件来源，如果部分第三方下载源侵犯了软件开发方或者合法代理商的合法权利，

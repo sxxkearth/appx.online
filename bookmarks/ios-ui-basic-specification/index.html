@@ -4,7 +4,7 @@
 <html lang="zh-CN">
   <head>
     
-        <title>APPX ONLINE</title>
+        <title>书签 | APPX ONLINE</title>
     
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -39,7 +39,7 @@
     <script src="/js/vue.js"></script>
     <script>
       Vue.config.productionTip = false
-      window.PAGE_TYPE = ""
+      window.PAGE_TYPE = "书签"
     </script>
 
     <!-- ga -->
@@ -58,6 +58,8 @@
   <body class="docs">
     <div id="mobile-bar">
       <a class="menu-button fa fa-bars"></a>
+      
+        <h2 class="nav-title">书签</h2>
       
       <a class="logo" href="/"></a>
     </div>
@@ -185,25 +187,137 @@
 
       </ul>
       
+        <div class="list">
+          <h2>
+            
+            书签
+          </h2>
+          <ul class="menu-root">
+  
+    
+    
+    <li>
+      <a href="/bookmarks/index.html" class="sidebar-link">网络收藏夹</a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="/bookmarks/mac-terminal/index.html" class="sidebar-link">macOS常用终端命令</a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="/bookmarks/ios-ui-basic-specification/index.html" class="sidebar-link current">iOS UI切图基本规范</a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="/bookmarks/native-bundleid/index.html" class="sidebar-link">苹果自带应用的BundleID</a>
+    </li>
+  
+</ul>
+
+        </div>
+      
     </div>
   
 </div>
 
 
-<div class="content  ">
+<div class="content 书签 with-sidebar ">
+  
+    
   
   
+    <h1>iOS UI切图基本规范</h1>
   
-    <h1 id="appx-online"><a href="#appx-online" class="headerlink" title="appx.online"></a>appx.online</h1>
+  
+    <p>旨在降低沟通成本，节约双方时间，减少出错率。</p>
+<h2 id="iPhone各代屏幕尺寸与分辨率"><a href="#iPhone各代屏幕尺寸与分辨率" class="headerlink" title="iPhone各代屏幕尺寸与分辨率"></a>iPhone各代屏幕尺寸与分辨率</h2><table>
+<thead>
+<tr>
+<th>iPhone型号</th>
+<th style="text-align:left">屏幕尺寸</th>
+<th style="text-align:left">缩放比例</th>
+<th style="text-align:left">逻辑分辨率</th>
+<th style="text-align:left">物理分辨率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4、4s</td>
+<td style="text-align:left">3.5</td>
+<td style="text-align:left">@2x</td>
+<td style="text-align:left">320 x 480</td>
+<td style="text-align:left">640 x 960</td>
+</tr>
+<tr>
+<td>5、5s、SE</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">@2x</td>
+<td style="text-align:left">320 x 568</td>
+<td style="text-align:left">640 x 1136</td>
+</tr>
+<tr>
+<td>6、6s、7、8</td>
+<td style="text-align:left">4.7</td>
+<td style="text-align:left">@2x</td>
+<td style="text-align:left">375 x 667</td>
+<td style="text-align:left">750 x 1334</td>
+</tr>
+<tr>
+<td>6 Plus、6s Plus、7 Plus、8 Plus</td>
+<td style="text-align:left">5.5</td>
+<td style="text-align:left">@3x</td>
+<td style="text-align:left">414 x 736</td>
+<td style="text-align:left">1242 x 2208</td>
+</tr>
+<tr>
+<td>X、XS</td>
+<td style="text-align:left">5.8</td>
+<td style="text-align:left">@3x</td>
+<td style="text-align:left">375 x 812</td>
+<td style="text-align:left">1125 x 2436</td>
+</tr>
+<tr>
+<td>XR</td>
+<td style="text-align:left">6.1</td>
+<td style="text-align:left">@2x</td>
+<td style="text-align:left">414 x 896</td>
+<td style="text-align:left">828 x 1792</td>
+</tr>
+<tr>
+<td>XS Max</td>
+<td style="text-align:left">6.5</td>
+<td style="text-align:left">@3x</td>
+<td style="text-align:left">414 x 896</td>
+<td style="text-align:left">1242 x 2688</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Logo"><a href="#Logo" class="headerlink" title="Logo"></a>Logo</h2><p>UI只需要提供 <strong>一张1024*1024</strong> 尺寸的图即可，开发使用<a href="https://img.vim-cn.com/24/a42106ba9e592869dc2293da2c04b11bf7657d.zip" rel="external nofollow noopener noreferrer" target="_blank">IconKit</a>工具可以直接生成开发需要的各种尺寸的图片及其json配置文件，直接拖进Xcode工程中就可以使用了。使用传统方式不同尺寸一张一张的切图不仅浪费UI的时间，开发也需要一张图一张图往对应位置拖，双方都很麻烦。</p>
+<h2 id="启动图"><a href="#启动图" class="headerlink" title="启动图"></a>启动图</h2><p>如果使用LaunchImage方式，需要切各个尺寸的图片，参考<a href="#iPhone各代屏幕尺寸与分辨率">iPhone各代屏幕尺寸与分辨率</a>表，如果需要兼容iPhone 4、4s机型，则需要提供一共7种尺寸的图片，如果最低兼容iPhone5的话，就只需要提供6种尺寸的图片。</p>
+<blockquote>
+<p>注意：iOS并不需要1920*1080这种尺寸的图片。</p>
+</blockquote>
+<h2 id="icon素材"><a href="#icon素材" class="headerlink" title="icon素材"></a>icon素材</h2><p>iOS端的切图需要同时提供@2x和@3x两种尺寸的图片，例如某个名为“imagename”的图片需要提供两个文件分别命名为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">imagename@2x.png</span><br><span class="line">imagename@3x.png</span><br></pre></td></tr></table></figure>
+<p>素材名（imagename）命名可以根据公司或团队规范而异，但是两种尺寸的文件的素材名部分要保持一致，唯一的不同就是<code>@2x</code>和<code>@3x</code>。</p>
+<p>例如一组命名符合规范的素材的文件结构应该是这样的：</p>
+<p><img src="https://img.vim-cn.com/44/0fcb53b111129b1500b98f4040d9b8549a441a.png" alt=""></p>
+
   
   
   <br><br><br>
 
   <div class="footer">
-      <p><time class="time" itemprop="dateUpdated" datetime="2018-11-23T09:10:47+08:00" content="2018-11-23 星期五">
-        <i class="fa fa-edit fa-fw" aria-hidden="true"></i>本文最后更新于：2018-11-23 星期五，
+      <p><time class="time" itemprop="dateUpdated" datetime="2018-10-09T10:53:07+08:00" content="2018-10-09 星期二">
+        <i class="fa fa-edit fa-fw" aria-hidden="true"></i>本文最后更新于：2018-10-09 星期二，
       </time>
-      想参与编辑？<a href="https://github.com/xaoxuu/appx.online/blob/master/src/README.md" target="_blank" rel="external nofollow noopener noreferrer">在 GitHub 上编辑此页！</a></p>
+      想参与编辑？<a href="https://github.com/xaoxuu/appx.online/blob/master/src/bookmarks/ios-ui-basic-specification/index.md" target="_blank" rel="external nofollow noopener noreferrer">在 GitHub 上编辑此页！</a></p>
 
       
         <p><i class="fa fa-exclamation-triangle fa-fw" aria-hidden="true"></i>本站所有下载链接均标注文件来源，如果部分第三方下载源侵犯了软件开发方或者合法代理商的合法权利，

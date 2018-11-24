@@ -7,6 +7,20 @@
     </url>
     
     <url>
+        <loc>https://appx.online/forum/</loc>
+        <lastmod>2018-11-24T07:51:57.854Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://appx.online/bookmarks/</loc>
+        <lastmod>2018-11-24T07:46:25.528Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>https://appx.online/ios/</loc>
         <lastmod>2018-11-24T06:42:55.839Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -65,6 +79,27 @@
     <url>
         <loc>https://appx.online/404/</loc>
         <lastmod>2018-11-23T01:10:47.939Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://appx.online/bookmarks/ios-ui-basic-specification/</loc>
+        <lastmod>2018-10-09T02:53:07.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://appx.online/bookmarks/native-bundleid/</loc>
+        <lastmod>2018-10-09T01:30:48.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://appx.online/bookmarks/mac-terminal/</loc>
+        <lastmod>2018-10-09T01:30:45.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
